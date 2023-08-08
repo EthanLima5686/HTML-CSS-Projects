@@ -1,0 +1,69 @@
+<!--A simple survey form utilizing various HTML elements-->
+<!DOCTYPE HTML>
+<html>
+    <!--HTML starts here-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Example Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form">
+            <h1>Example Survey</h1>
+            <p>Please input your info below</p>
+            <form>
+                <!--Text inputs for name, age, and email-->
+                <div class="info-text">
+                    <label class="label-text">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" class="text border-style" required>
+                </div>
+                <div class="info-text">
+                    <label class="label-text">Age</label>
+                    <input id="age" name="age" type="number" placeholder="Age" min="13" max="100" class="text border-style" required>
+                </div>
+                <div class="info-text">
+                    <label class="label-text">Email</label>
+                    <input id="email" name="email" type="email" placeholder="example@provider.com" class="text border-style" required>
+                </div>
+                <!--Dropdown menu-->
+                <div class="info-text">
+                    <label class="label-select">Select Gender</label>
+                    <select class="select border-style">
+                        <option>(Select One)</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <!--Radio inputs (only one can be selected)-->
+                <div class="info-radio">
+                    <label class="label-radio">What is your favorite animal?:</label>
+                    <label class="radio"><input id="cats" name="animal" type="radio">Cats</label>
+                    <label class="radio"><input id="dogs" name="animal" type="radio">Dogs</label>
+                    <label class="radio"><input id="birds" name="animal" type="radio">Birds</label>
+                    <label class="radio"><input id="other" name="animal" type="radio">Other</label>
+                </div>
+                <!--Checkbox inputs (multiple can be selected at once)-->
+                <div class="info-checkbox">
+                    <label class="label-checkbox">What are the best days of the week?:</label>
+                    <label class="checkbox"><input id="monday" name="monday" type="checkbox">Monday</label>
+                    <label class="checkbox"><input id="tuesday" name="tuesday" type="checkbox">Tuesday</label>
+                    <label class="checkbox"><input id="wednesday" name="wednesday" type="checkbox">Wednesday</label>
+                    <label class="checkbox"><input id="thursday" name="thursday" type="checkbox">Thursday</label>
+                    <label class="checkbox"><input id="friday" name="friday" type="checkbox">Friday</label>
+                    <label class="checkbox"><input id="saturday" name="saturday" type="checkbox">Saturday</label>
+                    <label class="checkbox"><input id="sunday" name="sunday" type="checkbox">Sunday</label>
+                </div>
+                <!--Suggestions box-->
+                <div class="info-textarea">
+                    <label class="label-textarea">Any suggestions?:</label>
+                    <textarea id="suggestions" name="suggestions" class="textarea border-style" rows="4" cols="61" placeholder="Enter suggestions here.."></textarea>
+                </div>
+                <!--Submission box-->
+                <div class="submit">
+                    <input id="submit" name="submit" type="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
