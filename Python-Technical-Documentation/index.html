@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Python Documentation</h1>
+      </header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <br>
+      <a class="nav-link" href="#Hello_World">Hello World</a>
+      <br>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <br>
+      <a class="nav-link" href="#if_and_elif_Statements">if and elif Statements</a>
+      <br>
+      <a class="nav-link" href="#Loops">Loops</a>
+      <br>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <br>
+      <a class="nav-link" href="#References">References</a>
+    </nav>
+    <main id="main-doc">  
+      <section class="main-section" id="Introduction">
+        <header>
+          <h3>Introduction</h3>
+        </header>
+        <p>
+          Python is a powerful language high level language that is easy to learn.
+          It is also widely used in a variety of industries for automation,
+          website building, data analysis and many more. When compared to
+          languages like C or C++, Python has more readable syntax which makes
+          it very friendly for new programmers who are developing general
+          programming skills and understanding concepts like data structures.
+        </p>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>
+          <h3>Hello World</h3>
+        </header>
+        <p>
+          The simpliest program we can make in Python outputs "Hello World" to the
+          console. We can achieve this by using the built-in print statement:
+        </p>
+        <code>print('Hello World');</code>
+        <p>
+          <strong>NOTE: </strong>semicolons are not required at the end of
+          statements in Python, but the statement will still run with a
+          semicolon.
+        </p>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>
+          <h3>Variables</h3>
+        </header>
+        <p>
+          Variables are used for storing and accessing data. You can think of them
+          like containers where storing data would be like putting an item inside
+          the container and accessing data would be like taking the item from the
+          container and using it. To store data in a variable, we must declare it
+          which can be done as follows:
+        </p>
+        <code>variable_name = value;</code>
+        <p>
+          This statement assigns a value to a variable so it can be stored. To
+          access the value, we can just use the variable name. The code below
+          assigns a value to the variable x and prints it to the console.
+        </p>
+        <code>
+          x = 42;<br>
+          print(x);
+        </code>
+        <h4>Data Types</h4>
+        <p>
+          There are many different types of values that can be stored in
+          variables, these are called data types. Python supports many, but here
+          are some of the most common ones:
+        </p>
+        <ul>
+          <li>Numbers: 4 (int), 4.5 (float), 0.5+4j (complex)</li>
+          <li>String: "Hello World"</li>
+          <li>Boolean: True or False</li>
+          <li>Sequence: holds multiple values</li>
+          <li>NoneType: represents no value</li>
+        </ul>
+      </section>
+      <section class="main-section" id="if_and_elif_Statements">
+        <header>
+          <h3>if and elif Statements</h3>
+        </header>
+        <p>
+          The use of if statements is for evaluating whether expressions are true
+          or false. Here is the general structure of an if statement in Python:
+        </p>
+        <code>
+          if <i>condition</i>:<br>
+            <div class="tab">statement 1<br></div>
+          else
+            <div class="tab">statement 2</div>
+        </code>
+        <p>
+          If you want to evaluate more than one condition, you can use elif after your
+          first statement.
+        </p>
+        <code>
+          if <i>condition</i>:<br>
+            <div class="tab">statement 1</div>
+          elif <i>condition 2</i>:<br>
+            <div class="tab">statement 2</div>
+          else
+            <div class="tab">statement 3</div>
+        </code>
+        <p>
+          <strong>NOTE: </strong>white space matters in Python! If you forget to
+          indent your statements, Python will not recognize it and give you an
+          error!
+        </p>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>
+          <h3>Loops</h3>
+        </header>
+        <p>
+          When writing code, you may need to repeat a block of code many times.
+          Instead of writing it all out manually, we can use loops to repeat the
+          same block of code a specified number of times. There are two main
+          loops in Python, for and while loops.
+        </p>
+        <h4>For Loops</h4>
+        <p>
+          In Python, for loops iterate over items in a sequence type (like a
+          string or list). The loop ends when it reaches the end of the sequence.
+          Here is the general layout of a for loop:
+        </p>
+        <code>
+          for variable_name in sequence:
+            <div class="tab">print(variable_name);</div>
+        </code>
+        <p>
+          Here is an example of for loops iterating over a string and list:
+        </p>
+        <p>String:</p>
+        <code>
+          str = 'Hello';<br>
+          <br>
+          for char in str:
+            <div class="tab">print(char);</div>
+        </code>
+        <p>Output:<code><br>H<br>e<br>l<br>l<br>o</code></p>
+        <p>List:</p>
+        <code>
+          List = ['Apples', 'Bananas', 'Oranges'];<br>
+          <br>
+          for item in List:
+            <div class="tab">print(item);</div>
+        </code>
+        <p>Output:<code><br>Apples<br>Bananas<br>Oranges</code></p>
+        <h4>While Loops</h4>
+        <p>
+          In addition to iterating over sequences, we can also iterate a block of
+          code based on a boolean condition. A while loop repeats a block of code
+          when a condition is true and terminates when the condition is false. A
+          while loop looks like this:
+        </p>
+        <code>
+          while <i>condition</i>:<br>
+            <div class="tab">
+              # this code only runs when condition is true
+            </div>
+        </code>
+        <p>
+          Here is an example of a while loop:
+        </p>
+        <code>
+          x = 0;<br>
+          <br>
+          while x <= 10:
+            <div class="tab">
+              print(x);<br>
+              x += 1;
+            </div>
+        </code>
+        <p>Output:<code><br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</code></p>
+        <h4>Range()</h4>
+        <p>
+          The range() function can be used to allow for loops to iterate over numbers or
+          the number of items in a sequence. Here is an example:
+        </p>
+        <code>
+          for index in range(3):
+            <div class="tab">print(index);</div>
+        </code>
+        <p>Output:<code><br>0<br>1<br>2</code></p>
+        <p>
+          <strong>NOTE: </strong>range starts at 0 by default so if you do range(5), only
+          0 to 4 will be printed.
+        </p>
+        <p>
+          range() can take multiple parameters. If you add a second paramter, range will
+          start at the first parameter and end (but not include) the second paramter.
+        </p>
+        <p>
+          <code>range(3, 9)</code> will print 3, 4, 5, 6, 7, 8 and does not include 9.
+        </p>
+        <p>
+          If a third parameter is added, range will start at the first parameter, end at
+          (but not include) the second parameter and skip items or values by the third
+          parameter.
+        </p>
+        <p>
+          <code>range(0, 10, 2)</code> will print 0, 2, 4, 6, 8 and does not include 10.
+        </p>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>
+          <h3>Functions</h3>
+        </header>
+        <p>
+          Functions are used to organize code and describe what the block of code
+          inside of it does. To define a function, we use the <code>def</code> keyword:
+        </p>
+        <code>
+          def <i>function_name</i>():
+            <div class="tab"># function code here</div>
+        </code>
+        <h4>Function Parameters</h4>
+        <p>
+          When defining a function, you can add variables that the function can use. These
+          are called paramters or arguements. You put them in the brackets after the
+          function name and separate them by a comma if you have multiple.
+        </p>
+        <code>
+          def <i>function_name</i>(num, str, List, ...):
+            <div class="tab"># function code here</div>
+        </code>
+        <h4>Return Types</h4>
+        <p>
+          Using the <code>return</code> keyword, you can take data from functions and use
+          them in other functions as well! When a variable is returned, it has a data type
+          with respect to the value contained in it. For example, if a function does a
+          numeric calaculation, the return type of the function will correspond to the
+          number data type. If there is no <code>return</code> statement in a function, it
+          will automatically be set to <code>None</code>.
+        </p>
+        <p>
+          Here is some code with a function that has a return type of number:
+        </p>
+        <code>
+          x = 5;<br>
+          y = 4;<br>
+          z = 2;<br>
+          <br>
+          def add(x, y, z):
+            <div class="tab">
+              result = x + y + z;<br>
+              return result;
+            </div>
+          <br>
+          print(add(x,y,z));
+        </code>
+        <p>
+          Here is the same code but with a function that has a return type of None:
+        </p>
+        <code>
+          x = 5;<br>
+          y = 4;<br>
+          z = 2;<br>
+          <br>
+          def add(x, y, z):
+            <div class="tab">
+              result = x + y + z;<br>
+              print(result);
+            </div>
+          <br>
+          add(x,y,z);
+        </code>
+      </section>
+      <section class="main-section" id="References">
+        <header>
+          <h3>References</h3>
+        </header>
+        <p>
+          <a href="https://docs.python.org/3/tutorial/index.html">Python Documentation</a>
+          <br>
+          <br>
+          <a href="https://www.programiz.com/python-programming/first-program">
+            Programiz Python Introduction
+          </a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

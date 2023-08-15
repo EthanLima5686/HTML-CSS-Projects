@@ -1,0 +1,27 @@
+/* Media Query: when screens are 1000px or less, the body content cannot be smaller than 500px*/
+@media (max-width: 1000px) {
+    body {
+      min-width: 500px;
+    }
+}
+
+/* Navigation Bar styling */
+#navbar {
+    display: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+}
+
+/* Main Info styling */
+#main-doc {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+/* Tab styling for indenting code */
+.tab {
+    margin-left: 20px;
+}
