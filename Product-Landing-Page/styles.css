@@ -1,0 +1,170 @@
+/* Variables for colors */
+:root {
+    --text-color: white;
+    --background-and-border-color: pink;
+}
+  
+/* Setting html to default margin, padding, and border-box (making all divs the same size regardless of border and padding)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    overflow: scroll;
+    font-family: sans-serif;
+    background: linear-gradient(180deg, var(--background-and-border-color), orange, yellow);
+    background-size: cover;
+}
+  
+/* Styling content inside body (setting the width and centering all body content) */
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1500px;
+}
+  
+/* Header styling */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+  
+/* Header logo and company name spacing */
+.header-content {
+    margin-top: 10px;
+}
+  
+/* Header logo styling */
+.header-img {
+    float: left;
+    width: 125px;
+    max-height: 10%;
+    margin-left: 5%;
+}
+  
+/* Nav bar styling (centering content and adding color) */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-and-border-color);
+}
+  
+/* Nav bar link styling */
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+  
+/* Nav bar styling for hovering cursor */
+a:hover {
+    color: black;
+}
+  
+/* Company name styling */
+h1 {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 10px;
+    color: var(--text-color);
+}
+  
+/* Media query for adjusting header and content width */
+@media (max-width: 1200px) {
+    .header-img, h1 {
+      width: 100px;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+  
+    .wrapper {
+      width: 1200px;
+    }
+}
+  
+/* Product info spacing */
+.product-section {
+    margin-top: 200px;
+}
+  
+/* Product info captions alignment */
+p {
+    text-align: center;
+}
+  
+/* Product info list styling */
+ul {
+    list-style-type: none;
+}
+  
+/* Individual list item styling */
+.product-section li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+/* Image styling */
+.img-1 {
+    max-width: 40%;
+    max-height: 10%;
+    margin-bottom: 10px;
+}
+  
+.img-2-and-3 {
+    max-width: 20%;
+    max-height: 10%;
+    margin-bottom: 10px;
+}
+  
+/* Borders for images 1 and 3*/
+.border {
+    border: 5px solid var(--background-and-border-color);
+}
+  
+/* Header text styling for YouTube video */
+.header-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+/* YouTube video styling */
+iframe {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
+}
+  
+/* Contact section spacing */
+.contact-section {
+    margin-top: 30px;
+}
+  
+/* Contact info spacing */
+.contact-section p {
+    margin-top: 10px;
+}
+  
+/* Email input box spacing */
+#email {
+    margin-left: 15px;
+}
+  
+/* Submit button spacing */
+#submit {
+    margin-top: 10px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
