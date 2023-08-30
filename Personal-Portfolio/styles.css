@@ -1,0 +1,214 @@
+:root {
+    --primary-color-1: #CC313D;
+    --primary-color-2: #F7C5CC;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Navbar */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 55px;
+    z-index: 1;
+    background-color: var(--primary-color-2);
+}
+  
+ul {
+    display: flex;
+    margin-right: 1em;
+    margin-top: 0.5vh;
+}
+  
+.nav-link {
+    margin-right: 2em;
+}
+  
+.nav-link:hover {
+    color: var(--primary-color-1);
+}
+  
+/* Welcome section */
+.welcome-section {  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://a.cdn-hotels.com/gdcs/production147/d1285/0745ceba-e251-44dd-900d-758bd7078d8a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  
+h1 {
+    font-size: 3em;
+    font-family: sans-serif;
+}
+  
+p {
+    font-size: 1.5em;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+  
+/* Project section */
+.projects-section {
+    width: 100%;
+    height: 175vh;
+    background-color: var(--primary-color-1);
+}
+  
+.timeline {
+    height: 139.7vh;
+    border: 10px solid var(--primary-color-2);
+    border-radius: 9px;
+    position: absolute;
+    left: 50%;
+    margin-top: 5.9vh;
+}
+  
+.timeline-point {
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+}
+  
+.one {
+    top: 110vh;
+}
+  
+.two {
+    top: calc((140vh / 4) + 110vh);
+}
+  
+.three {
+    top: calc((140vh / 2) + 110vh);
+}
+  
+.four {
+    top: calc((140vh * (3 / 4)) + 110vh);
+}
+  
+.five {
+    top: calc(248vh + 3px);
+}
+  
+.project-tile {
+    position: absolute;
+    text-align: center;
+}
+  
+.project-left-align {
+    left: 1vw;
+}
+  
+.project-right-align {
+    right: 0.2vw;
+}
+  
+@media only screen and (min-width: 1300px) {
+    .project-left-align {
+      left: 9vw;
+    }
+  
+    .project-right-align {
+      right: 9vw;
+    }
+}
+  
+img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+  
+h2 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+}
+  
+.project-tile p {
+    font-size: 1rem;
+}
+  
+@media only screen and (min-width: 1900px) {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .project-tile p {
+      font-size: 1.5rem;
+    }
+  
+    .projects-section {
+      height: 180vh;
+    }
+}
+  
+a {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+  
+a:hover {
+    color: var(--primary-color-2);
+}
+  
+/* Contact section */
+.contact-section {
+    width: 100%;
+    height: 35vh;
+    text-align: center;
+    background-color: var(--primary-color-2);
+}
+  
+.projects-section-header, .contact-section h2 {
+    font-size: 3em;
+}
+  
+.textbox, .contact-section textarea {
+    width: 45vw;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid var(--primary-color-1);
+}
+  
+.submit:hover {
+    opacity: 0.8;
+}
+  
+.submit {
+    margin-top: 2vh;
+    width: 10vw;
+    height: 2vh;
+}
+  
+.social-link {
+    width: 100%;
+    height: 5vh;
+    margin-top: 2.2vh;
+    background-color: var(--primary-color-1);
+}
+  
+.social-link i {
+    font-style: normal;
+    font-family: sans-serif;
+}
